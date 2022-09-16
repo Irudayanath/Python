@@ -1,3 +1,4 @@
-url=https://api.zalando.com/article-reviews
-response_code=requests.get(url+/article-reviews)
-print(response_code)
+
+payload = {'key1': 'value1', 'key2': 'value2'}
+r = requests.get('https://httpbin.org/get', params=payload)
+print(r.url)
